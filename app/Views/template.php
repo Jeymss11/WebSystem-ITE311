@@ -13,7 +13,7 @@
         </div>
     </nav>
     <div class="container text-center mt-5">
-        <h1 class="display-3 fw-bold">Welcome to ITE311 Web System</h1>
+        <h1 class="display-3 fw-bold">Welcome to ITE311 WEB System</h1>
         <p class="lead mt-3">
             This is My homepage after using
             <a href="https://codeigniter.com/" target="_blank">CodeIgniter</a>
