@@ -1,19 +1,17 @@
-<?= $this->extend('template') ?>
-
-<?= $this->section('content') ?>
-    <div class="d-flex justify-content-between align-items-center mb-4">
-    <h1 class="mb-0 text-dark">Dashboard</h1>
-    <a href="<?= base_url('logout') ?>" class="btn btn-outline-danger">Logout</a>
-</div>
-
-<div class="alert alert-success" role="alert">
-    Welcome, <?= esc(session('userEmail')) ?>!
-</div>
-
-<div class="card shadow-sm border-0 bg-white text-dark">
-    <div class="card-body">
-        <p class="mb-0">This is a protected page only visible after login.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+    <div class="bg-secondary p-5 rounded shadow text-white w-50">
+        <h2>Dashboard</h2>
+        <div class="alert alert-success">
+            Welcome, <?= session()->get('email'); ?>!
+        </div>
+        <p>This is a protected page only visible after login.</p>
+        <a href="/logout" class="btn btn-danger">Logout</a>
     </div>
-</div>
-
-<?= $this->endSection() ?>
+</body>
+</html>
